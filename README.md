@@ -1,5 +1,2 @@
-# OSINT
-# OSINT
-# OSINT
-# OSINT
-# OSINT
+#OSINT
+
