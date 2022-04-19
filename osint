@@ -1,0 +1,28 @@
+#! /usr/bin/python3
+import virustotal
+import malwarelist
+print(''' 
+#################################
+#           OSINT               #
+#     SEARCHING     TOOL        #
+#################################
+'''         )
+print('''
+enter valid option:
+[i] ==> ip
+[d] ==> domain
+[u] ==> url 
+''')
+t = str(input("option: "))
+x = str(input("Enter The Target: "))
+if t == "i":
+    virustotal.vtip(x,virustotal.key)
+    malwarelist.lists(x)
+elif t == "d":
+    virustotal.vtdom(x,virustotal.key)
+    malwarelist.lists(x)
+
+elif t == "u":
+    virustotal.vturl(x,virustotal.key)
+    malwarelist.lists(x)
+else: print("enter valid option")
