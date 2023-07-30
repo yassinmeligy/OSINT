@@ -1,7 +1,7 @@
 import requests
 import json
 x= "facebook.com"
-key = "2c96088524801730be06644aeb8257c529ecbeae112c9f01b60bab3612a895c8"
+key = "key"
 def fhand(response):
     det = open('det.txt', 'a')
     det.write(response.text)
